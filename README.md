@@ -1,11 +1,7 @@
-Laravel Wrapper for PostgreSQL's Geo-Extension Postgis
+Laravel Postgis
 ======================================================
 
-![Build Status](https://github.com/mstaack/laravel-postgis/workflows/Test%20Suite/badge.svg)
-
-
-# DEPRECATED
-Consider using: https://github.com/clickbar/laravel-magellan
+If you want to looking for Laravel 11 you can use https://github.com/clickbar/laravel-magellan also you can use this package with Laravel 10 and below.
 
 ## Features
 
@@ -38,12 +34,12 @@ Fluent in Laravel Packages and Postgres/Postgis? Consider contributing! We are l
 - Use 3.* for Laravel 5
 
 ```bash
-composer require "mstaack/laravel-postgis:3.*"
+composer require "enesthedev/laravel-postgis:3.*"
 ```
 
 - Use 5.* for Laravel 6/7/8/9
 ```bash
-composer require mstaack/laravel-postgis
+composer require enesthedev/laravel-postgis
 ```
 
 For laravel >=5.5 that's all. This package supports Laravel new [Package Discovery](https://laravel.com/docs/5.5/packages#package-discovery).
