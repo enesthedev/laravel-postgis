@@ -2,7 +2,7 @@
 
 namespace MStaack\LaravelPostgis;
 
-use Enes\LaravelPostgres\PostgresConnection;
+use Enes\LaravelPostgres\Packages\Postgres\PostgresConnection;
 use MStaack\LaravelPostgis\Schema\Grammars\PostgisGrammar;
 
 class PostgisConnection extends PostgresConnection

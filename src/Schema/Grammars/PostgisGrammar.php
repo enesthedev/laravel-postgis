@@ -1,6 +1,6 @@
 <?php namespace MStaack\LaravelPostgis\Schema\Grammars;
 
-use Enes\LaravelPostgres\Schema\Grammars\PostgresGrammar;
+use Enes\LaravelPostgres\Packages\Postgres\PostgresGrammar;
 use Illuminate\Support\Fluent;
 use MStaack\LaravelPostgis\Schema\Blueprint;
 use MStaack\LaravelPostgis\Exceptions\UnsupportedGeomtypeException;
