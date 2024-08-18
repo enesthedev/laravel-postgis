@@ -1,10 +1,11 @@
 <?php namespace MStaack\LaravelPostgis\Connectors;
 
+use Enes\LaravelPostgres\PostgresConnection;
 use Illuminate\Database\Connection;
 use PDO;
 use MStaack\LaravelPostgis\PostgisConnection;
 
-class ConnectionFactory extends \Bosnadev\Database\Connectors\ConnectionFactory
+class ConnectionFactory extends \Enes\LaravelPostgres\Connectors\ConnectionFactory
 {
     /**
      * @param string       $driver
@@ -14,7 +15,7 @@ class ConnectionFactory extends \Bosnadev\Database\Connectors\ConnectionFactory
      * @param array        $config
      * @return \Illuminate\Database\Connection|PostgisConnection
      */
-    protected function createConnection($driver, $connection, $database, $prefix = '', array $config = [])
+    protected function createConnection($driver, $connection, $database, $prefix = '', array $config = []): PostgresConnection|\Illuminate\Database\ConnectionInterface
     {
         if ($resolver = Connection::getResolver($driver)) {
             return $resolver($connection, $database, $prefix, $config);
